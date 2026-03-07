@@ -1,0 +1,126 @@
+:root {
+    --text-color: #1a1c20;
+    --link-color: #4a76ee;
+    --background-color: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-family: 'Poppins';
+    background-color: var(--background-color);
+}
+
+a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    height: 80px;
+}
+
+nav .left {
+    color: #1E40AF;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+nav.right a {
+    color:var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a :last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/* SECTION !: Hero */
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 0 30px;
+    margin: 50px 0;
+    gap: 40px;
+}
+
+.hero-section .hero-content {
+    flex: 0 0 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.hero-section .students {
+    flex: 0 0 45%;
+}
+.students img {
+    width: 100%;
+    max-width: 550px;
+}
+
+@media (max-width: 600px) {
+    nav {
+        padding: 0 20px;
+    }
+    nav .left {
+        font-size: 18px;
+    }
+    nav .right a {
+        font-size: 13px;
+        margin: 0 5px;
+    }
+    nav .right a:last-child {
+        padding: 4px 10px;
+    }
+}
+
+.btn-primary {
+    display: block;
+    background-color: #F59E0B;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-top: 20px;
+    width: 100%;        
+}
+
+.btn-secondary {
+    display: block;
+    border: 2px solid #1E40AF;
+    color: #1E40AF;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 600;
+    width: 100%;       
+}
+
+.hero-section .hero-content h1 {
+    font-size: 38px;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
